@@ -23,7 +23,7 @@ struct ConversionView: View {
     var convertToDollars: Bool {
            return activeTab == .usdToArg
        }
-    
+     
     var body: some View {
         NavigationStack {
             ZStack(alignment: .top) {
@@ -96,7 +96,7 @@ struct CustomSegmented: View {
         .padding(.top, type2 ? 0 : 10)
         .background {
             RoundedRectangle(cornerRadius: type2 ? 30 : 0)
-                .fill(Color(backgroundColor))
+                .fill(Color(.color))
                 .ignoresSafeArea()
         }
         .padding(.top, type2 ? 15 : 0)
@@ -110,3 +110,4 @@ extension UIApplication {
         sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
+
